@@ -21,7 +21,6 @@ class Footer extends HTMLElement {
                     <div class="footer-section">
                         <h3>Contact</h3>
                         <p>Email: info@theaifolks.com</p>
-                        <p>Phone: (555) 123-4567</p>
                     </div>
                 </div>
                 <div class="footer-bottom">

@@ -57,4 +57,3 @@ For licensing inquiries, please contact info@theaifolks.com
 
 For business inquiries or support:
 - Email: info@theaifolks.com
-- Phone: (555) 123-4567
