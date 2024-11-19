@@ -1,0 +1,31 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .templates-container {
+        padding: 6rem 1rem 3rem;
+    }
+
+    .templates-header h1 {
+        font-size: 2rem;
+    }
+
+    .template-filters {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .modal {
+        padding: 1rem;
+    }
+
+    .modal-content {
+        margin: 1rem auto;
+    }
+
+    .modal-preview {
+        padding-top: 75%; /* 4:3 Aspect Ratio for mobile */
+    }
+}

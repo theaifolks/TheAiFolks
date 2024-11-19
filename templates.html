@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Solutions - Shilpi Enterprise Solutions</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/templates-layout.css">
+    <link rel="stylesheet" href="css/templates-cards.css">
+    <link rel="stylesheet" href="css/templates-modal.css">
+    <link rel="stylesheet" href="css/templates-responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header-component></header-component>
+
+    <main class="templates-container">
+        <header class="templates-header">
+            <h1>Digital Solutions</h1>
+            <p>Comprehensive digital transformation solutions for your enterprise</p>
+        </header>
+
+        <div class="template-filters">
+            <button class="filter-btn active" data-filter="all">All Solutions</button>
+            <button class="filter-btn" data-filter="business">Enterprise</button>
+            <button class="filter-btn" data-filter="portfolio">Digital Presence</button>
+            <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+        </div>
+
+        <div class="templates-grid">
+            <!-- Enterprise Solutions -->
+            <div class="template-card" data-category="business">
+                <div class="template-preview">
+                    <iframe src="https://startbootstrap.github.io/startbootstrap-modern-business/" loading="lazy" title="Enterprise Portal Solution"></iframe>
+                    <div class="template-overlay">
+                        <button class="preview-btn" data-template="business-1">Preview</button>
+                    </div>
+                </div>
+                <div class="template-info">
+                    <h3>Enterprise Portal</h3>
+                    <p>Complete enterprise portal solution with employee dashboard, analytics, and workflow management</p>
+                    <div class="template-tags">
+                        <span>Enterprise</span>
+                        <span>Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="template-card" data-category="business">
+                <div class="template-preview">
+                    <iframe src="https://startbootstrap.github.io/startbootstrap-agency/" loading="lazy" title="Digital Workspace Solution"></iframe>
+                    <div class="template-overlay">
+                        <button class="preview-btn" data-template="business-2">Preview</button>
+                    </div>
+                </div>
+                <div class="template-info">
+                    <h3>Digital Workspace</h3>
+                    <p>Integrated digital workspace with collaboration tools and project management</p>
+                    <div class="template-tags">
+                        <span>Collaboration</span>
+                        <span>Workspace</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Presence Solutions -->
+            <div class="template-card" data-category="portfolio">
+                <div class="template-preview">
+                    <iframe src="https://startbootstrap.github.io/startbootstrap-creative/" loading="lazy" title="Brand Experience Platform"></iframe>
+                    <div class="template-overlay">
+                        <button class="preview-btn" data-template="portfolio-1">Preview</button>
+                    </div>
+                </div>
+                <div class="template-info">
+                    <h3>Brand Experience Platform</h3>
+                    <p>Comprehensive digital brand management and customer experience solution</p>
+                    <div class="template-tags">
+                        <span>Branding</span>
+                        <span>CX</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="template-card" data-category="portfolio">
+                <div class="template-preview">
+                    <iframe src="https://startbootstrap.github.io/startbootstrap-freelancer/" loading="lazy" title="Content Management Solution"></iframe>
+                    <div class="template-overlay">
+                        <button class="preview-btn" data-template="portfolio-2">Preview</button>
+                    </div>
+                </div>
+                <div class="template-info">
+                    <h3>Content Hub</h3>
+                    <p>AI-powered content management and distribution platform</p>
+                    <div class="template-tags">
+                        <span>Content</span>
+                        <span>AI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-commerce Solutions -->
+            <div class="template-card" data-category="ecommerce">
+                <div class="template-preview">
+                    <iframe src="https://startbootstrap.github.io/startbootstrap-shop-homepage/" loading="lazy" title="E-commerce Platform"></iframe>
+                    <div class="template-overlay">
+                        <button class="preview-btn" data-template="ecommerce-1">Preview</button>
+                    </div>
+                </div>
+                <div class="template-info">
+                    <h3>Enterprise Commerce</h3>
+                    <p>Complete B2B/B2C e-commerce platform with AI-powered analytics</p>
+                    <div class="template-tags">
+                        <span>E-commerce</span>
+                        <span>Analytics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="template-card" data-category="ecommerce">
+                <div class="template-preview">
+                    <iframe src="https://startbootstrap.github.io/startbootstrap-shop-item/" loading="lazy" title="Marketplace Solution"></iframe>
+                    <div class="template-overlay">
+                        <button class="preview-btn" data-template="ecommerce-2">Preview</button>
+                    </div>
+                </div>
+                <div class="template-info">
+                    <h3>Digital Marketplace</h3>
+                    <p>Multi-vendor marketplace platform with integrated payment solutions</p>
+                    <div class="template-tags">
+                        <span>Marketplace</span>
+                        <span>Fintech</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Solution Preview Modal -->
+    <div class="modal" id="templateModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-preview">
+                <iframe id="modalFrame" src="" title="Solution Preview"></iframe>
+            </div>
+            <div class="modal-info">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <a href="contact.html" class="btn primary">Schedule Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <footer-component></footer-component>
+
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/templates.js"></script>
+</body>
+</html>
