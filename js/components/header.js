@@ -15,7 +15,7 @@ class Header extends HTMLElement {
                     <a href="contact.html" class="cta-button">Schedule Demo</a>
                 </div>
                 <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars menu-icon"></i>
                 </div>
             </nav>
         `;
@@ -29,10 +29,29 @@ class Header extends HTMLElement {
 
         // Add menu button functionality
         const menuBtn = this.querySelector('.menu-btn');
+        const menuIcon = this.querySelector('.menu-icon');
         const navLinks = this.querySelector('.nav-links');
         
         menuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            // Toggle menu icon between bars and times
+            if (navLinks.classList.contains('active')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking a link
+        const links = this.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            });
         });
     }
 }

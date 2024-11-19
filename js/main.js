@@ -1,15 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mobile menu functionality
-    const menuBtn = document.querySelector('.menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (menuBtn && navLinks) {
-        menuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    }
-
     // Close mobile menu when clicking outside
+    const navLinks = document.querySelector('.nav-links');
     document.addEventListener('click', (e) => {
         if (navLinks && navLinks.classList.contains('active')) {
             if (!e.target.closest('.nav-links') && !e.target.closest('.menu-btn')) {
