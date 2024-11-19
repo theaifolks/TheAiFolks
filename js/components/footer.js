@@ -16,7 +16,7 @@ class Footer extends HTMLElement {
                         <a href="index.html">Home</a>
                         <a href="templates.html">Templates</a>
                         <a href="about.html">About</a>
-                        <a href="contact.html">Get Quote</a>
+                        <a href="contact.html">Get Started</a>
                     </div>
                     <div class="footer-section">
                         <h3>Contact</h3>
