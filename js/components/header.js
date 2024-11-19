@@ -6,7 +6,7 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <nav>
-                <a href="index.html" class="logo">Shilpi</a>
+                <a href="index.html" class="logo">TheAiFolks</a>
                 <div class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="ai-solutions.html">Enterprise Solutions</a>

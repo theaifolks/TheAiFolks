@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
             <footer>
                 <div class="footer-content">
                     <div class="footer-section">
-                        <h3>Shilpi</h3>
+                        <h3>TheAiFolks</h3>
                         <p>Transforming enterprises with AI-powered solutions</p>
                     </div>
                     <div class="footer-section">
@@ -20,12 +20,12 @@ class Footer extends HTMLElement {
                     </div>
                     <div class="footer-section">
                         <h3>Contact</h3>
-                        <p>Email: info@shilpi.com</p>
+                        <p>Email: info@theaifolks.com</p>
                         <p>Phone: (555) 123-4567</p>
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; ${new Date().getFullYear()} Shilpi. All rights reserved.</p>
+                    <p>&copy; ${new Date().getFullYear()} TheAiFolks. All rights reserved.</p>
                 </div>
             </footer>
         `;
