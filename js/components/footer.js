@@ -20,7 +20,7 @@ class Footer extends HTMLElement {
                     </div>
                     <div class="footer-section">
                         <h3>Contact</h3>
-                        <p>Email: info@theaifolks.com</p>
+                        <p>Email: info@theaifolks.org</p>
                     </div>
                 </div>
                 <div class="footer-bottom">

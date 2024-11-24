@@ -51,9 +51,9 @@ This software and associated documentation files (the "Software") are the propri
 3. You may not reverse engineer, decompile, or disassemble the Software.
 4. The Software is provided "as is", without warranty of any kind, express or implied.
 
-For licensing inquiries, please contact info@theaifolks.com
+For licensing inquiries, please contact info@theaifolks.org
 
 ## Contact
 
 For business inquiries or support:
-- Email: info@theaifolks.com
+- Email: info@theaifolks.org
