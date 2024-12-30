@@ -29,6 +29,16 @@ class Footer extends HTMLElement {
                 </div>
             </footer>
         `;
+
+        // Add chat widget script
+        const chatScript = document.createElement('script');
+        chatScript.async = true;
+        chatScript.id = 'vectorshift-chat-widget';
+        chatScript.src = 'https://app.vectorshift.ai/chatWidget.js';
+        chatScript.setAttribute('chatbot-id', '6772db436bb0b257926a7f80');
+        chatScript.setAttribute('chatbot-height', '600px');
+        chatScript.setAttribute('chatbot-width', '400px');
+        document.body.appendChild(chatScript);
     }
 }
 
