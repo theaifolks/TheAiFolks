@@ -38,6 +38,28 @@ class Footer extends HTMLElement {
         chatScript.setAttribute('chatbot-id', '6772db436bb0b257926a7f80');
         chatScript.setAttribute('chatbot-height', '600px');
         chatScript.setAttribute('chatbot-width', '400px');
+        // Override the fetch response to ensure chatOpen is false
+        const overrideScript = document.createElement('script');
+        overrideScript.textContent = `
+            const originalFetch = window.fetch;
+            window.fetch = async function(...args) {
+                const response = await originalFetch.apply(this, args);
+                if (args[0].includes('/chatbots/deployed/')) {
+                    const clone = response.clone();
+                    const data = await clone.json();
+                    if (data.deploymentOptions) {
+                        data.deploymentOptions.chatOpen = false;
+                    }
+                    return new Response(JSON.stringify(data), {
+                        status: response.status,
+                        statusText: response.statusText,
+                        headers: response.headers
+                    });
+                }
+                return response;
+            };
+        `;
+        document.body.appendChild(overrideScript);
         document.body.appendChild(chatScript);
     }
 }
